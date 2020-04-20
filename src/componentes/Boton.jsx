@@ -10,6 +10,8 @@ export const Boton = props => (
       <div className={`boton-stilo ${
         esOperador(props.children) ? null : 'operador'
       }`}
+
+      onClick={() => props.handleClick(props.children)} 
       >
         {props.children}
       </div>
